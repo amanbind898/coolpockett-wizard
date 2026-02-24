@@ -13,6 +13,21 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
+## Lighthouse Scores (Production)
+
+![Lighthouse scores — Performance 100, Accessibility 92, Best Practices 96, SEO 100](./public/lighthouse-scores.png)
+
+| Category | Score |
+|---|---|
+| 🟢 Performance | 100 |
+| 🟢 Accessibility | 92 |
+| 🟢 Best Practices | 96 |
+| 🟢 SEO | 100 |
+
+> Audited on [coolpockett-wizard.vercel.app](https://coolpockett-wizard.vercel.app/)
+
+---
+
 ## Tech Stack
 
 | Concern | Choice |
