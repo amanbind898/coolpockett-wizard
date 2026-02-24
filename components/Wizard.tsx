@@ -18,7 +18,7 @@ function ConfirmationScreen() {
         <div className="flex flex-col items-center justify-center h-full gap-6 text-center px-6">
             <div className="w-20 h-20 rounded-full bg-green-50 flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-green-500" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" strokeWidth={2.5}>
+                    fill="none" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
                     <polyline points="20 6 9 17 4 12" />
                 </svg>
             </div>
@@ -91,7 +91,7 @@ function WizardInner() {
     if (submitted) {
         return (
             <div className="flex flex-col h-screen max-w-lg mx-auto">
-                <main className="flex-1 overflow-y-auto">
+                <main className="flex-1 overflow-y-auto" aria-label="Account submission confirmation">
                     <ConfirmationScreen />
                 </main>
             </div>
@@ -110,7 +110,7 @@ function WizardInner() {
                         className="absolute left-4 text-gray-600 hover:text-gray-900 transition-colors"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" strokeWidth={2}>
+                            fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                             <polyline points="15 18 9 12 15 6" />
                         </svg>
                     </button>

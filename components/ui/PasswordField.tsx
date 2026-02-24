@@ -75,15 +75,15 @@ export default function PasswordField({
 
             {/* Strength bar */}
             {value && strength && (
-                <div className="mt-1">
+                <div className="mt-1" role="status" aria-live="polite" aria-label={`Password strength: ${strength}`}>
                     <div className="h-1 w-full rounded-full bg-gray-100 overflow-hidden">
                         <div
                             className={`h-full rounded-full transition-all duration-300 ${strengthMeta[strength].color} ${strengthMeta[strength].width}`}
                         />
                     </div>
                     <p className={`text-xs mt-1 font-medium ${strength === 'Weak' ? 'text-red-500' :
-                            strength === 'Fair' ? 'text-yellow-600' :
-                                strength === 'Strong' ? 'text-blue-600' : 'text-green-600'
+                        strength === 'Fair' ? 'text-yellow-600' :
+                            strength === 'Strong' ? 'text-blue-600' : 'text-green-600'
                         }`}>
                         {strength}
                     </p>
